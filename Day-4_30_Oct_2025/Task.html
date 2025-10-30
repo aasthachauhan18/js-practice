@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //           1.  Display a welcome message using a variable.
+
+      let msg = "Hello, How are you..?";
+      console.log(msg);
+
+      //   2.  Create variables with different data types and check their types.
+
+      let number = 10;
+      console.log(number);
+      console.log(typeof number);
+
+      let str = "Aastha";
+      console.log(str);
+      console.log(typeof str);
+
+      let boolean = true;
+      console.log(boolean);
+      console.log(typeof boolean);
+
+      let sym = Symbol("Hellow");
+      console.log(sym);
+      console.log(typeof sym);
+
+      let und;
+      console.log(und);
+      console.log(typeof und);
+
+      let bInt = 10n;
+      console.log(bInt);
+      console.log(typeof bInt);
+
+      let arr = [1, 1, 2, 3, 4, "Aastha"];
+      console.log(arr);
+      console.log(typeof arr);
+
+      let obj = {
+        name: "Aastha",
+        age: 20,
+      };
+      console.log(obj);
+      console.log(typeof obj);
+
+      //   3.  Convert a string value to a number.
+
+      let str2 = "123";
+      console.log(typeof str2);
+
+      let num3 = Number(str2)
+      console.log(typeof num3);
+      
+
+      //   4.  Round a decimal value using number methods.
+
+      let num = 14.276778378;
+      console.log(Math.round(num));
+
+      //   5.  Generate a random number between 1 and 100.
+
+      console.log(Math.floor(Math.random()*100 +1));
+
+      //   6.  Find the square and cube of a number.
+
+      console.log(Math.sqrt(64));
+      console.log(Math.cbrt(27));
+
+      //   7.  Find the maximum and minimum from a given list of numbers.
+      console.log(Math.max(10, 20, 30, 49, 40));
+      console.log(Math.min(10, 20, 30, 49, 40));
+
+      //   8.  Check whether a number is even or odd.
+
+      let num1 = 10;
+
+      if (num1 % 2 == 0) {
+        console.log("Even number");
+      } else {
+        console.log("Odd Number");
+      }
+
+      //   9.  Convert temperature from Celsius to Fahrenheit.
+
+      let temp = 35;
+
+      let Fahrenheit = (temp * 9) / 5 + 32;
+
+      console.log(Fahrenheit);
+
+      //   10.  Calculate simple interest using given values.
+      let amount = 1000;
+      let rate = 10;
+      let time = 12;
+
+      let interest = (amount * rate * time) / (100 * 12);
+      console.log(interest);
+
+      //   11.  Compare two numbers using comparison operators.
+
+      // let a = 10
+
+      // let b = "10"
+
+      // console.log(a==b);
+      // console.log(a===b);
+
+      //   12.  Store the result of a comparison and check its data type.
+
+      //  let a = 10
+
+      // let b = "10"
+
+      // console.log(a==b);
+      // console.log(a===b);
+
+      //   13.  Convert a number to a string.
+
+      //   let a = 10;
+      //   let b = "10";
+      //   console.log(b);
+
+      //   console.log(a);
+      //   console.log(String(a));
+
+      //   14.  Round a number to two decimal places.
+
+      console.log(Math.PI);
+      console.log(Math.PI.toFixed(2));
+
+      //   15.  Find the absolute difference between two numbers.
+
+      //   let a = 20;
+      //   let b = 30
+
+      //   let difference = Math.abs(a-b)
+      //   console.log(difference);
+
+      //   16.  Calculate the area of a circle using radius.
+
+      let radius = 15;
+      let area = Math.PI * radius * radius;
+
+      console.log(area);
+
+      //   17.  Use increment and decrement operators on a variable.
+
+      let a = 35;
+      console.log(a++);
+      console.log(a++);
+      console.log(++a);
+      console.log(a++);
+      console.log(--a);
+      console.log(a--);
+      console.log(a++);
+      console.log(++a);
+      console.log(a);
+
+      //   18.  Check the data type before and after converting a string to a number.
+      let str1 = "123";
+      console.log(typeof str);
+
+      let num2 = Number(str);
+      console.log(typeof num);
+
+      //   19.  Use compound assignment operators to update a variable.
+
+      let x = 10;
+
+      x += 5;
+      console.log(x);
+
+      x -= 3;
+      console.log(x);
+
+      x *= 2;
+      console.log(x);
+
+      x /= 4;
+      console.log(x);
+
+      x %= 5;
+      console.log(x);
+
+      //   20.  Find the square root and cube root of a number.
+
+      console.log(Math.sqrt(81));
+      console.log(Math.cbrt(27));
+    </script>
+  </body>
+</html>

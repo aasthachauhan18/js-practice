@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //         Task 1:
+      // Check whether a number entered by the user is even or odd.
+
+    //   let num = 10;
+
+    //   if (num%2==0) {
+    //     console.log("Even Number");
+        
+    //   }else{
+    //     console.log("Odd Number");
+        
+    //   }
+
+      // Task 2:
+      // Ask the user to enter a month number (1–12) and display the number of days in that month.
+
+    //   let Month = 1;
+
+    //   switch (Month) {
+    //     case 1:
+    //         console.log("January");
+            
+    //         break;
+    //    case 2:
+    //         console.log("Febuary");
+            
+    //         break;
+    //    case 3:
+    //         console.log("March");
+            
+    //         break;
+    //    case 4:
+    //         console.log("April");
+            
+    //         break;
+    //    case 5:
+    //         console.log("May");
+            
+    //         break;
+    //    case 6:
+    //         console.log("June");
+            
+    //         break;
+    //    case 7:
+    //         console.log("July");
+            
+    //         break;
+    //    case 8:
+    //         console.log("August");
+            
+    //         break;
+    //    case 9:
+    //         console.log("Septempber");
+            
+    //         break;
+    //    case 10:
+    //         console.log("October");
+            
+    //         break;
+    //    case 11:
+    //         console.log("November");
+            
+    //         break;
+    //    case 12:
+    //         console.log("December");
+            
+    //         break;
+      
+    //     default:
+    //         console.log("Choose a correct number");
+            
+    //         break;
+    //   }
+
+      // Task 3:
+      // Ask the user for marks and display the grade:
+
+      // 90–100 → A
+
+      // 75–89 → B
+
+      // 50–74 → C
+
+      // Below 50 → Fail
+
+    //   let marks = 10;
+
+    //   if (marks >= 80 && marks <=100) {
+    //     console.log("A");
+        
+    //   } else if(marks>=75 && marks <90){
+    //     console.log("B");
+        
+    //   }else if(marks>=50 && marks < 74)
+    //   {
+    //     console.log("C");
+        
+    //   }else if(marks<50){
+    //     console.log("Fail");
+        
+    //   }
+      
+
+      // Task 4:
+      // Check whether a given number is positive, negative, or zero.
+    //   let num = 10;
+
+    //   if (num>0) {
+    //     console.log("Positive");
+        
+    //   } else if(num<0) {
+    //     console.log("Negative");
+        
+    //   } else{
+    //     console.log("Zero");
+        
+    //   }
+
+      // Task 5:
+      // Ask the user to enter a time (in 24-hour format) and display:
+
+      // 0–11 → “Good Morning”
+
+      // 12–17 → “Good Afternoon”
+
+      // 18–23 → “Good Evening”
+
+    //   let time = 15;
+
+    //   if (time > 0  && time<=11) {
+    //     console.log("Good Morning");
+        
+    //   } else if(time>12 && time<=17) {
+    //     console.log("Good Afternoon");
+        
+    //   } else if(time>18 && time <=23){
+    //     console.log("Good Evening");
+        
+    //   }
+
+      // Task 6:
+      // Ask the user to enter a month name and display its season:
+
+      // March–May → “Spring”
+
+      // June–August → “Summer”
+
+      // September–November → “Autumn”
+
+      // December–February → “Winter”
+
+      let month = "April";
+
+      if (month=="March" && month =="April" && month=="May") {
+        console.log("Spring");
+        
+      } else if(month=="June" && month =="July" && month=="August") {
+        console.log("Summer");
+        
+      } else if(month=="September" && month =="October" && month=="November"){
+        console.log("Autumn");
+        
+      } else if(month=="December" && month =="January" && month=="Febuary"){
+        console.log("Winter");
+        
+      }else{
+        console.log("Invalid");
+        
+      }
+
+      // Task 7:
+      // Check whether a given year is a Leap Year or not.
+    //   let year = 2020;
+
+    //   if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
+    //     console.log("Leap Year");
+        
+    //   } else{
+    //     console.log("Not a leap year");
+        
+    //   }
+
+      // Task 8:
+    //   // Take three numbers and find the largest using if...else if...else.
+
+    //   let num1 = 20;
+    //   let num2 = 30;
+    //   let num3 = 40;
+
+    //   if (num1>num2 && num1>num3) {
+    //     console.log("Num1 is Largest");
+        
+    //   } else if(num2>num1 && num2>num3) {
+    //     console.log("Num2 is Largest");
+        
+    //   }else{
+    //     console.log("Num3 is largest");
+        
+    //   }
+
+      // Task 9:
+      // Ask the user to enter a product price and membership status.
+
+      // If the user is a member, give 10% discount.
+
+      // If not, show the full price.
+
+    //   let product_price = 100;
+    //   let status = false;
+
+    //   if (status == true) {
+    //     let discount = product_price-(product_price*10/100);
+    //     console.log(discount);
+        
+        
+    //   } else{
+    //     console.log(product_price);
+        
+    //   }
+      // Task 10:
+      // Take a shopping amount and apply discount using conditions:
+
+      // Amount ≥ 5000 → 20% discount
+
+      // Amount ≥ 2000 → 10% discount
+
+      // Else → No discount
+
+    //   let amount = 4000;
+    //   if (amount>=5000) {
+    //     let discount = amount-(amount*20/100)
+    //     console.log(discount);
+        
+    //   } if (amount>=2000) {
+    //     let discount = amount-(amount*10/100)
+    //     console.log(discount);
+        
+    //   } else {
+    //     console.log("No discount");
+        
+    //   }
+    </script>
+  </body>
+</html>

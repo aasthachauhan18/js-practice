@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NestedEcomTask</title>
+  </head>
+  <body>
+    <script>
+      let shoes_company = prompt(
+        "Choose a type:\nNike\nPuma\nRed Tape\nAdidas"
+      );
+      switch (shoes_company) {
+        case "Nike":
+          let color1 = prompt("Black\nWhite");
+          console.log("Brand:",shoes_company);
+          console.log("Color:",color1);
+          let Nike_price = 2800;
+          if (color1 == "Black" || color1 == "White") {
+            console.log("Base Price:",Nike_price);
+            let discount = (Nike_price * 10) / 100;
+            console.log("Discount:",discount);
+            let Final_price = Nike_price - discount;
+            console.log("Final_Price:",Final_price);
+            if (Final_price > 5000) {
+              console.log("Category:Luxury Category");
+            } else if (Final_price <= 2500 && Final_price <= 5000) {
+              console.log("Category:Mid Range Category");
+            } else if (Final_price < 2500) {
+              console.log("Category:Budget Category");
+            } else {
+              console.log("Category:No Category");
+            }
+            if (discount >= 20) {
+              console.log("Offer:Hot Deal");
+            } else if (discount > 10 && discount <= 19) {
+              console.log("Offer:Standard Offer");
+            } else if (discount < 10) {
+              console.log("Offer:Low Offer");
+            } else {
+              console.log("No offer");
+            }
+          } else {
+            console.log("Selected Color not Available for this brand.");
+          }
+        
+          break;
+
+        case "Puma":
+          let color2 = prompt("Green\nRed");
+          console.log("Brand:",shoes_company);
+          console.log("Color:",color2);
+          let Puma_price = 2900;
+          if (color2 == "Green" || color2 == "Red") {
+            console.log("Base Price:",Puma_price);
+            let discount = (Puma_price * 15) / 100;
+            console.log("Discount:",discount);
+            let Final_price = Puma_price - discount;
+            console.log("Final Price:",Final_price);
+            if (Final_price > 5000) {
+              console.log("Category:Luxury Category");
+            } else if (Final_price <= 2500 && Final_price <= 5000) {
+              console.log("Category:Mid Range Category");
+            } else if (Final_price < 2500) {
+              console.log("Category:Budget Category");
+            } else {
+              console.log("No Category");
+            }
+            if (discount >= 20) {
+              console.log("Offer:Hot Deal");
+            } else if (discount > 10 && discount <= 19) {
+              console.log("Offer:Standard Offer");
+            } else if (discount < 10) {
+              console.log("Offer:Low Offer");
+            } else {
+              console.log("No offer");
+            }
+          } else {
+            console.log("Selected Color not Available for this brand.");
+          }
+        
+          break;
+
+           
+        case "Red Tape":
+          let color3 = prompt("Brown");
+          console.log("Brand:",shoes_company);
+          console.log("Color:",color3);
+          let Red_price = 1800;
+          if (color3 == "Brown") {
+            console.log("Base price:",Red_price);
+            let discount = (Red_price * 21) / 100;
+            console.log("Discount:",discount);
+            let Final_price = Red_price - discount;
+            console.log("Final Price:",Final_price);
+            if (Final_price > 5000) {
+              console.log("Category:Luxury Category");
+            } else if (Final_price <= 2500 && Final_price <= 5000) {
+              console.log("Category:Mid Range Category");
+            } else if (Final_price < 2500) {
+              console.log("Category:Budget Category");
+            } else {
+              console.log("No Category");
+            }
+            if (discount >= 20) {
+              console.log("Offer:Hot Deal");
+            } else if (discount > 10 && discount <= 19) {
+              console.log("Offer:Standard Offer");
+            } else if (discount < 10) {
+              console.log("Offer:Low Offer");
+            } else {
+              console.log("No offer");
+            }
+          } else {
+            console.log("Selected Color not Available for this brand.");
+          }
+
+          break;
+
+        
+        case "Adidas":
+          let color4 = prompt("White\nBlue");
+          console.log("Brand:",shoes_company);
+          console.log("Color:",color4);
+          let Adidas_price = 6500;
+          if (color4 == "White" || color4 == "Blue") {
+            console.log("Base Price:",Adidas_price);
+            let discount = (Adidas_price * 11) / 100;
+            console.log("Discount:",discount);
+            let Final_price = Adidas_price - discount;
+            console.log("Final Price:",Final_price);
+            if (Final_price > 5000) {
+              console.log("Category:Luxury Category");
+            } else if (Final_price <= 2500 && Final_price <= 5000) {
+              console.log("Category:Mid Range Category");
+            } else if (Final_price < 2500) {
+              console.log("Category:Budget Category");
+            } else {
+              console.log("No Category");
+            }
+            if (discount >= 20) {
+              console.log("Offer:Hot Deal");
+            } else if (discount > 10 && discount <= 19) {
+              console.log("Offer:Standard Offer");
+            } else if (discount < 10) {
+              console.log("Offer:Low Offer");
+            } else {
+              console.log("No offer");
+            }
+          } else {
+            console.log("Selected Color not Available for this brand.");
+          }
+
+          break;
+
+        default:
+            console.log("Not Available");
+            
+          break;
+      }
+    </script>
+  </body>
+</html>
